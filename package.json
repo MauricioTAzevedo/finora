@@ -1,0 +1,35 @@
+{
+  "name": "finora-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Finora — Household Financial Intelligence Platform",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "test": "npm run test --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "finora",
+    "financial-intelligence",
+    "household-finance",
+    "double-entry-ledger",
+    "excel-migration",
+    "ai-native",
+    "portuguese-br"
+  ],
+  "author": "Maurício Azevedo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

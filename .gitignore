@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+vendor/
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Build & Dist
+.next/
+out/
+dist/
+bin/
+*.exe
+*.out
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Docker & Temp
+scratch/
+tmp/
+coverage/
+
+# Data & Uploads
+uploads/*
+!uploads/.gitkeep
+exports/*
+!exports/.gitkeep
