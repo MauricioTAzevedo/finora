@@ -9,16 +9,16 @@
   - Architecture documentation & ADRs (ADR-001 through ADR-007).
   - Canonical PRD & Roadmap definition.
 
-- [ ] **Phase 0.2 — Web Application & Core Monorepo Setup**
+- [x] **Phase 0.2 — Web Application & Core Monorepo Setup**
   - Next.js 15 Web App setup (`apps/web`) with React 19, TypeScript, Tailwind CSS, and shadcn/ui design tokens.
   - Core API & Shared Domain Models (`packages/contracts`, `services/api`).
-  - PostgreSQL Migration Schema & Seeding (Users, Households, Accounts, Categories, Ledger, Transactions).
+  - PostgreSQL Database Migration Schema ([`database/migrations/001_initial_schema.sql`](file:///c:/Users/Maur%C3%ADcio/Downloads/FINORA%20GEMINI/database/migrations/001_initial_schema.sql)).
   - Health check & baseline verification tests.
 
-- [ ] **Phase 1.1 — Identity & Household Governance Slice**
+- [x] **Phase 1.1 — Identity & Household Governance Slice**
   - User Signup / Authentication flow.
   - Household Creation & Member Roles (Owner, Admin, Member, Viewer).
-  - Cross-Household Multi-Tenant Security Boundary Tests.
+  - Cross-Household Multi-Tenant Security Boundary Tests ([`security.test.ts`](file:///c:/Users/Maur%C3%ADcio/Downloads/FINORA%20GEMINI/services/api/src/__tests__/security.test.ts)).
 
 - [ ] **Phase 1.2 — Double-Entry Ledger Core & Account Management**
   - Asset Accounts (Checking, Savings) & Liability Accounts (Credit Cards).
