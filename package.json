@@ -9,10 +9,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=apps/web",
-    "build": "npm run build --workspace=apps/web",
-    "test": "npm run test --workspace=apps/web",
-    "lint": "npm run lint --workspace=apps/web",
+    "dev": "pnpm --filter @finora/web dev",
+    "dev:api": "pnpm --filter @finora/api dev",
+    "build": "pnpm --recursive build",
+    "test": "pnpm --recursive test",
+    "lint": "pnpm --filter @finora/web lint",
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down"
   },
